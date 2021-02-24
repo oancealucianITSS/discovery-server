@@ -1,0 +1,12 @@
+server:
+  name: eureka-server
+  port: 8100
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    register-with-eureka: false
+    fetch-registry: false
+    should-unregister-on-shutdown: true
+
